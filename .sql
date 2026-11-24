@@ -22,3 +22,10 @@ WHERE dept_id NOT IN (2, 3);
 SELECT name, salary
 FROM Employee
 WHERE salary IS NULL;
+
+#using LIMIT
+SELECT name, salary
+FROM Employee
+WHERE salary IS NOT NULL
+ORDER BY salary DESC
+LIMIT 3;
