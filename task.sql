@@ -54,3 +54,45 @@ WHERE title = 'Learn SQL';
 
 #QUESTION 4
 
+DELETE FROM Book
+WHERE stock < 10;
+
+
+#QUESTION5
+
+ALTER TABLE Book
+ADD language VARCHAR(20);
+
+#QUESTION6
+
+SELECT title, price
+FROM Book
+WHERE price > 400
+ORDER BY price DESC;
+
+#QUESTION7
+
+SELECT title, author, price
+FROM Book
+WHERE title LIKE 'D%';
+
+#QUESTION8
+
+
+SELECT title, price
+FROM Book
+WHERE price BETWEEN 350 AND 480;
+
+#QUESTION9
+
+SELECT title, author, pub_id
+FROM Book
+WHERE pub_id IN (1, 3);
+
+#QUESTION10
+
+SELECT title, stock
+FROM Book
+WHERE stock IS NOT NULL
+ORDER BY stock DESC
+LIMIT 3;
