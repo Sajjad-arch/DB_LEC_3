@@ -17,3 +17,8 @@ WHERE budget NOT BETWEEN 600000 AND 900000;
 SELECT name, salary, dept_id
 FROM Employee
 WHERE dept_id NOT IN (2, 3);
+
+#using NULL
+SELECT name, salary
+FROM Employee
+WHERE salary IS NULL;
